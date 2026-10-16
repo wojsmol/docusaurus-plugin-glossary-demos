@@ -10,7 +10,7 @@
   "dependencies": {
     "@docusaurus/core": "^3.10.2",
     "@docusaurus/preset-classic": "^3.10.2",
-    "docusaurus-plugin-glossary": "^3.4.0",
+    "docusaurus-plugin-glossary": "github:mcclowes/docusaurus-plugin-glossary",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },

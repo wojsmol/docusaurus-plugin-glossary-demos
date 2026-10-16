@@ -19,11 +19,16 @@ its **first occurrence** per document. Compare:
 
 `linkOnlyFirstOccurrence` is **merged on the upstream `master` branch**
 (`src/remark/glossary-terms.ts`) but has **not yet been released on npm**
-(latest release: v3.4.0 does not include it).
+(latest stable release: v3.4.0 does not include it).
 
-This demo uses the upstream `getRemarkPlugin` directly with the option — no
-local patch is needed. Once the next npm release ships with this option, the
-demo will work out of the box with `npm install`.
+`package.json` therefore points to the GitHub `master` branch directly:
+
+```json
+"docusaurus-plugin-glossary": "github:mcclowes/docusaurus-plugin-glossary"
+```
+
+Once the feature is published to npm, change this back to a semver range
+(e.g. `"^3.5.0"`) and the demo will work with the stable release.
 
 ## Running locally
 
