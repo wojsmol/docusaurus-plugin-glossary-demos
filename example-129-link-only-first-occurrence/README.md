@@ -17,9 +17,13 @@ its **first occurrence** per document. Compare:
 
 ## Status
 
-`linkOnlyFirstOccurrence` is **already implemented** in `docusaurus-plugin-glossary`
-v3.4.0. This demo uses the upstream `getRemarkPlugin` directly — no local
-patch is needed.
+`linkOnlyFirstOccurrence` is **merged on the upstream `master` branch**
+(`src/remark/glossary-terms.ts`) but has **not yet been released on npm**
+(latest release: v3.4.0 does not include it).
+
+This demo uses the upstream `getRemarkPlugin` directly with the option — no
+local patch is needed. Once the next npm release ships with this option, the
+demo will work out of the box with `npm install`.
 
 ## Running locally
 

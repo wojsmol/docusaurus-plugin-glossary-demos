@@ -15,6 +15,11 @@ const __dirname = path.dirname(__filename);
  *
  * Compare /docs/with-option (linkOnlyFirstOccurrence: true) and
  * /docs/without-option (default behaviour, all occurrences linked).
+ *
+ * Status: merged on upstream master (src/remark/glossary-terms.ts) but not
+ * yet released on npm. The latest npm release (v3.4.0) does not include it,
+ * so npm install will currently install a version without this option.
+ * No local patch is needed — getRemarkPlugin is used directly from the package.
  */
 
 /** @type {import('@docusaurus/types').Config} */

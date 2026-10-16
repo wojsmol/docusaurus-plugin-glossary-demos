@@ -19,7 +19,7 @@ inside any of them to see the feature in action.
 
 | Issue | Status | Notes |
 |---|---|---|
-| [#129](https://github.com/mcclowes/docusaurus-plugin-glossary/issues/129) | ✅ Already in upstream | `linkOnlyFirstOccurrence` is in v3.4.0; demo uses `getRemarkPlugin` directly |
+| [#129](https://github.com/mcclowes/docusaurus-plugin-glossary/issues/129) | 🔀 Merged, not released | Merged on `master` but not in v3.4.0 (latest npm); demo uses `getRemarkPlugin` directly, no local patch |
 | [#162](https://github.com/mcclowes/docusaurus-plugin-glossary/issues/162) | 🔄 Open | Requires local remark plugin + swizzled `GlossaryTerm` |
 | [#163](https://github.com/mcclowes/docusaurus-plugin-glossary/issues/163) | 🔄 Partial | `references` already upstream; `definitionType` requires local `GlossaryPage` patch |
 | [#164](https://github.com/mcclowes/docusaurus-plugin-glossary/issues/164) | 🔄 Open | Requires local remark plugin + swizzled `GlossaryTerm` + extended `GlossaryPage` |
