@@ -1,0 +1,26 @@
+# Demo: references & definitionType (#163)
+
+This minimal Docusaurus site demonstrates two fields for
+`docusaurus-plugin-glossary`:
+
+- **`references`** — source-attribution links shown at the bottom of each
+  glossary entry.
+- **`definitionType`** — a badge classifying the definition (e.g. `normative`,
+  `legal`).
+
+## Pages
+
+- **[Demo page →](/docs/references-demo)**
+- **[Glossary →](/glossary)** — see references and definitionType badges per term.
+
+## Issue
+
+[mcclowes/docusaurus-plugin-glossary#163](https://github.com/mcclowes/docusaurus-plugin-glossary/issues/163)
+
+## Status
+
+- `references` is already in the upstream `GlossaryTerm` type and rendered by
+  the built-in `GlossaryPage` component. No local patch needed for that part.
+- `definitionType` is not yet in upstream. The extended `GlossaryPage`
+  (`src/components/GlossaryPage.tsx`) is swapped in via
+  `NormalModuleReplacementPlugin` (`src/plugins/glossary-page-override.cjs`).

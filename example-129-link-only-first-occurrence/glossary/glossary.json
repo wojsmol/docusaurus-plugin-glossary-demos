@@ -1,0 +1,28 @@
+{
+  "title": "Glossary",
+  "description": "Demo glossary for issue #129 — linkOnlyFirstOccurrence",
+  "terms": [
+    {
+      "term": "API",
+      "abbreviation": "Application Programming Interface",
+      "definition": "A set of rules and protocols that allows different software applications to communicate with each other.",
+      "relatedTerms": ["REST"]
+    },
+    {
+      "term": "REST",
+      "abbreviation": "Representational State Transfer",
+      "definition": "An architectural style for designing networked applications that uses stateless HTTP communication.",
+      "relatedTerms": ["API"]
+    },
+    {
+      "term": "webhook",
+      "definition": "An HTTP callback triggered when a specific event occurs.",
+      "aliases": ["webhooks"]
+    },
+    {
+      "term": "deploy",
+      "definition": "The process of releasing and running an application in a target environment.",
+      "aliases": ["deployment", "deploying", "deployed"]
+    }
+  ]
+}

@@ -1,0 +1,27 @@
+# Demo: acronym field (#164)
+
+This minimal Docusaurus site demonstrates the `acronym` field proposal for
+`docusaurus-plugin-glossary`.
+
+The existing `abbreviation` field handles terms where the **short form is
+canonical** (e.g. `"API"`). The proposed `acronym` field handles the opposite:
+the **full name is canonical** and the short form is appended on first use
+(e.g. `"Web Content Accessibility Guidelines (WCAG)"`).
+
+## Pages
+
+- **[acronym demo →](/docs/acronym-demo)** — see first-use expansion in action.
+- **[vs. abbreviation →](/docs/abbreviation-comparison)** — side-by-side
+  comparison of both fields.
+- **[Glossary →](/glossary)**
+
+## Issue
+
+[mcclowes/docusaurus-plugin-glossary#164](https://github.com/mcclowes/docusaurus-plugin-glossary/issues/164)
+
+## How it works
+
+The local remark plugin (`src/remark/glossary-sdc.cjs`) recognises the
+`acronym` field and, when `expandAcronymsOnFirstUse: true`, appends the short
+form in parentheses on the first occurrence of the full term. The acronym value
+is also registered as an alias so it auto-links to the same entry.

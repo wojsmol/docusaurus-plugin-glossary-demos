@@ -1,0 +1,27 @@
+{
+  "title": "Glossary",
+  "description": "Demo glossary for issue #162 — shortDefinition field",
+  "terms": [
+    {
+      "term": "digital accessibility",
+      "definition": "The practice of making websites, tools, and technologies designed and developed so that people with disabilities can use them. More specifically, people can perceive, understand, navigate, and interact with the web.",
+      "shortDefinition": "Designing websites and tools usable by people with disabilities.",
+      "aliases": ["web accessibility", "a11y"]
+    },
+    {
+      "term": "screen reader",
+      "definition": "A software application that identifies and interprets what is being displayed on the screen, re-presenting it with text-to-speech, sound icons, or a braille output device.",
+      "shortDefinition": "Assistive technology that reads screen content aloud."
+    },
+    {
+      "term": "WCAG",
+      "abbreviation": "Web Content Accessibility Guidelines",
+      "definition": "A set of technical standards developed by the W3C that define how to make web content more accessible to people with disabilities. The current version is WCAG 2.2."
+    },
+    {
+      "term": "keyboard navigation",
+      "definition": "The ability to use a website or application using only a keyboard, without requiring the use of a mouse or touchscreen.",
+      "shortDefinition": "Using a website with keyboard only, no mouse required."
+    }
+  ]
+}

@@ -1,0 +1,21 @@
+# Demo: shortDefinition (#162)
+
+This minimal Docusaurus site demonstrates the `shortDefinition` field proposal
+for `docusaurus-plugin-glossary`.
+
+- **[Demo page →](/docs/short-definition)** — hover over linked terms to see
+  the short definition in the tooltip.
+- **[Glossary →](/glossary)**
+
+## Issue
+
+[mcclowes/docusaurus-plugin-glossary#162](https://github.com/mcclowes/docusaurus-plugin-glossary/issues/162)
+
+## How it works
+
+Each term in `glossary.json` may have a `shortDefinition` field alongside the
+full `definition`. The local remark plugin (`src/remark/glossary-sdc.cjs`)
+passes it as a prop to the swizzled `GlossaryTerm` component
+(`src/theme/GlossaryTerm/`), which uses it as the tooltip text.
+
+When `shortDefinition` is absent, the full `definition` is used as fallback.

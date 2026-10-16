@@ -1,0 +1,28 @@
+{
+  "title": "Glossary",
+  "description": "Demo glossary for issue #164 — acronym field",
+  "terms": [
+    {
+      "term": "Web Content Accessibility Guidelines",
+      "acronym": "WCAG",
+      "definition": "A set of technical standards developed by the W3C that define how to make web content more accessible to people with disabilities. The current version is WCAG 2.2.",
+      "aliases": ["WCAG"]
+    },
+    {
+      "term": "Accessible Rich Internet Applications",
+      "acronym": "ARIA",
+      "definition": "A W3C specification for adding semantics and accessibility information to web content, enabling assistive technologies to convey meaning to users.",
+      "aliases": ["ARIA", "WAI-ARIA"]
+    },
+    {
+      "term": "assistive technology",
+      "definition": "Hardware or software that helps people with disabilities use computers and mobile devices.",
+      "aliases": ["assistive technologies"]
+    },
+    {
+      "term": "API",
+      "abbreviation": "Application Programming Interface",
+      "definition": "A set of rules and protocols that allows different software applications to communicate with each other."
+    }
+  ]
+}

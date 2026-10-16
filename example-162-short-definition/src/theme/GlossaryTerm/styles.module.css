@@ -1,0 +1,69 @@
+.glossaryTermWrapper {
+  position: relative;
+  display: inline;
+}
+
+.glossaryTerm {
+  text-decoration: underline dotted;
+  cursor: pointer;
+}
+
+/* Wskaźnik fokusu — widoczny kontur zgodny z WCAG 2.4.11 */
+.glossaryTerm:focus-visible,
+.infoButton:focus-visible {
+  outline: 2px solid currentColor;
+  outline-offset: 2px;
+  border-radius: 2px;
+}
+
+/* Przycisk dymka — wzorzec tooltip-popover: jawne wywołanie kliknięciem/tapem */
+/* Pole trafienia min. 24×24 px — WCAG 2.5.8 Target Size (Minimum) */
+.infoButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  min-width: 24px;
+  min-height: 24px;
+  margin-inline: 2px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: inherit;
+  font: inherit;
+  line-height: 1;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.infoIcon {
+  font-size: 0.95em;
+}
+
+.tooltip {
+  position: fixed;
+  z-index: 999;
+  width: 320px;
+  max-width: calc(100vw - 16px);
+  background: var(--ifm-background-surface-color, #fff);
+  border: 1px solid var(--ifm-color-emphasis-300, #ccc);
+  border-radius: 6px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  padding: 10px 12px;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: var(--ifm-font-color-base);
+  pointer-events: none;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.tooltipVisible {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto; /* pozwala zaznaczyć i przeczytać treść dymka */
+}
+
+.tooltipTop {}
+.tooltipBottom {}
+.tooltipFloating {}

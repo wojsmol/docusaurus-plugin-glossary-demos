@@ -1,0 +1,20 @@
+# Demo: linkOnlyFirstOccurrence (#129)
+
+This minimal Docusaurus site demonstrates the `linkOnlyFirstOccurrence` option
+for `docusaurus-plugin-glossary`.
+
+- **[With option →](/docs/with-option)** — `linkOnlyFirstOccurrence: true`:
+  only the first occurrence of each term is auto-linked per page.
+- **[Without option →](/docs/without-option)** — default behaviour:
+  every occurrence is auto-linked.
+- **[Glossary →](/glossary)**
+
+## Issue
+
+[mcclowes/docusaurus-plugin-glossary#129](https://github.com/mcclowes/docusaurus-plugin-glossary/issues/129)
+
+## Status
+
+`linkOnlyFirstOccurrence` is already implemented in `docusaurus-plugin-glossary`
+as of v3.4.0 (`src/remark/glossary-terms.ts`). This demo uses the upstream
+`getRemarkPlugin` directly — no local patch needed.
